@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ANTIMELE - Pressing moderne et boutique prêt-à-porter à Lomé. Service rapide 24H.">
+    <meta name="keywords" content="pressing lomé, vêtements, boutique, lavage à sec, antimele">
+    <meta property="og:title" content="ANTIMELE Pressing & Boutique">
+    <meta property="og:description" content="Service de pressing rapide et boutique mode à Lomé">
+    <meta property="og:image" content="images/logo-antimele.png">
+    <meta name="theme-color" content="#00c2ff">
+    <title>ANTIMELE - Pressing & Prêt-à-Porter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo-antimele.png" type="image/png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="images/logo-antimele.png" alt="Logo ANTIMELE" class="site-logo">
+        <div class="logo">ANTI<span>MELE</span></div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#boutique">Boutique</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1 class="floating">BIENVENUE CHEZ <span>ANTIMELE</span></h1><br>
+        <p>Votre pressing moderne et boutique prêt-à-porter élégante.</p>
+        <a href="#services" class="btn">Découvrir nos services</a>
+    </div>
+</section>
+
+<section id="services">
+    <div class="title reveal">
+        <h2>NOS SERVICES</h2>
+        <p>Des prestations rapides, propres et professionnelles.</p>
+    </div>
+
+    <div class="services">
+        <div class="card reveal">
+            <h3>Lavage à Sec</h3>
+            <p>Nettoyage professionnel de vos vêtements délicats avec des produits de haute qualité.</p>
+        </div>
+
+        <div class="card reveal">
+            <h3>Repassage</h3>
+            <p>Repassage impeccable pour chemises, pantalons, costumes et autres vêtements.</p>
+        </div>
+
+        <div class="card reveal">
+            <h3>Entretien Premium</h3>
+            <p>Protection et entretien avancé pour conserver l’élégance de vos habits.</p>
+        </div>
+    </div>
+</section>
+
+<hr style="height: 7px; background-color: #00c2ff;">
+
+<section id="boutique">
+    <div class="title reveal">
+        <h2>NOTRE BOUTIQUE</h2>
+        <p>Découvrez nos produits disponibles en stock.</p>
+    </div>
+
+    <div class="products">
+        <div class="product reveal category-card" onclick="openCategory('chemises')">
+            <img src="images/chemise.jpg" loading="lazy" alt="Chemise ANTIMELE">
+            <div class="product-content">
+                <h3>Chemises</h3>
+                <p>Voir les modèles disponibles</p>
+            </div>
+        </div>
+
+        <div class="product reveal category-card" onclick="openCategory('pantalons')">
+            <img src="images/pantalon.jpg" alt="Pantalons">
+            <div class="product-content">
+                <h3>Pantalons</h3>
+                <p>Voir les modèles disponibles</p>
+            </div>
+        </div>
+
+        <div class="product reveal category-card" onclick="openCategory('accessoires')">
+            <img src="images/accessoires.jpg" alt="Accessoires">
+            <div class="product-content">
+                <h3>Tricots & Accessoires</h3>
+                <p>Voir les modèles disponibles</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr style="height: 7px; background-color: #00c2ff;">
+
+<section id="about">
+    <div class="about">
+        <img class="reveal" src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop" alt="À propos">
+
+        <div class="about-text reveal">
+            <h3>À PROPOS DE ANTIMELE</h3>
+            <p>ANTIMELE est un pressing et une boutique prêt-à-porter moderne proposant des services de lavage à sec, repassage et entretien de vêtements en 24H.</p>
+            <p>Nous proposons également des chemises, pantalons, chaînes, parfums et plusieurs accessoires de mode avec une qualité exceptionnelle.</p>
+
+            <a href="#contact" class="btn">Nous contacter</a>
+            <a href="https://wa.me/22898162626" class="btn1">WhatsApp</a>
+        </div>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="stat-box reveal">
+        <h2 class="counter" data-target="1574">0</h2>
+        <p>Clients satisfaits</p>
+    </div>
+
+    <div class="stat-box reveal">
+        <h2 class="counter" data-target="11">0</h2>
+        <p>Années d'expérience</p>
+    </div>
+
+    <div class="stat-box reveal">
+        <h2 class="counter" data-target="27326">0</h2>
+        <p>Vêtements nettoyés</p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="title reveal">
+        <h2>CONTACTEZ-NOUS</h2>
+        <p>Nous sommes disponibles pour vos commandes et informations.</p>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-info reveal">
+            <h3>INFORMATIONS</h3>
+            <p><strong>Nom :</strong> ANTIMELE</p>
+            <p><strong>Services :</strong> Pressing & Prêt-à-Porter</p>
+            <p><strong>Téléphone :</strong> +228 98 16 26 26</p>
+            <p><strong>Email :</strong> pressingantimele@gmail.com</p>
+            <p><strong>Adresse :</strong> Lomé - Avedji coller à la microfinance Coecept</p>
+            <p><strong>Horaires :</strong></p>
+            <p>Lundi - Jeudi : 7h00 à 20h00</p>
+            <p>Vendredi - Samedi : 7H00 à 21H00</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 ANTIMELE - Pressing & Prêt-à-Porter</p>
+</footer>
+
+<!-- Modal Stock -->
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="categoryTitle"></h2>
+        <div id="stockContainer"></div>
+    </div>
+</div>
+
+<!-- Bouton Panier -->
+<div id="cartBtn" onclick="openCart()">
+    🛒 Panier (<span id="cartCount">0</span>)
+</div>
+
+<!-- Modal Panier -->
+<div class="modal" id="cartModal">
+    <div class="modal-content">
+        <span class="close" onclick="closeCart()">&times;</span>
+        <h2>Votre Panier</h2>
+        <div id="cartItems"></div>
+        <hr style="margin:20px 0;">
+
+        <div class="form-group">
+    <label for="clientName">Nom</label>
+    <input type="text" id="clientName" placeholder="Votre nom complet">
+    <small id="nameError" class="error-text"></small>
+</div>
+
+<div class="form-group">
+    <label for="clientPhone">Téléphone</label>
+    <input type="tel" id="clientPhone" placeholder="Votre téléphone">
+    <small id="phoneError" class="error-text"></small>
+</div>
+
+        <div id="cartTotal">Total : 0 FCFA</div>
+
+        <button type="button" class="reserve-btn" style="width:100%;" onclick="sendWhatsApp()">
+            Réserver sur WhatsApp
+        </button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
