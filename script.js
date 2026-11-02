@@ -1,6 +1,4 @@
-// ============================================
-// 1. STOCK DE PRODUITS
-// ============================================
+//Le STOCK DE PRODUITS
 const stock = {
     chemises: [
         { nom: "Chemise Premium", prix: "12.000 FCFA", img: "images/chemise-premium.jpg" },
@@ -27,14 +25,10 @@ const stock = {
     ]
 };
 
-// ============================================
-// PANIER
-// ============================================
+//Le PANIER
 let cart = [];
 
-// ============================================
-// UTILS
-// ============================================
+// L'OUTILS
 function showToast(message) {
     const toast = document.createElement("div");
     toast.textContent = message;
@@ -53,9 +47,7 @@ function showToast(message) {
     setTimeout(() => toast.remove(), 2000);
 }
 
-// ============================================
-// SCROLL REVEAL
-// ============================================
+// Le SCROLL REVEAL
 window.addEventListener('scroll', reveal);
 
 function reveal() {
@@ -67,9 +59,7 @@ function reveal() {
     });
 }
 
-// ============================================
-// COUNTERS
-// ============================================
+// Le COUNTERS
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll('.counter').forEach(counter => {
         counter.innerText = '0';
@@ -91,17 +81,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// ============================================
-// HEADER STICKY
-// ============================================
+//Le HEADER STICKY
 window.addEventListener('scroll', () => {
     document.querySelector('header')
         .classList.toggle('sticky', window.scrollY > 50);
 });
 
-// ============================================
-// OPEN CATEGORY
-// ============================================
+// L'OPEN CATEGORY
 function openCategory(cat) {
     const modal = document.getElementById("modal");
     const container = document.getElementById("stockContainer");
@@ -132,9 +118,7 @@ function closeModal() {
     document.getElementById("modal").style.display = "none";
 }
 
-// ============================================
-// FIND ARTICLE
-// ============================================
+// Le FIND ARTICLE
 function findArticle(name) {
     for (let cat in stock) {
         const found = stock[cat].find(a => a.nom === name);
@@ -142,9 +126,7 @@ function findArticle(name) {
     }
 }
 
-// ============================================
-// RESERVE
-// ============================================
+// La RESERVE
 function reserve(name) {
     const item = findArticle(name);
 
@@ -156,9 +138,7 @@ function reserve(name) {
     showToast(`${item.nom} ajouté au panier`);
 }
 
-// ============================================
-// CART
-// ============================================
+// La CART
 function updateCart() {
     document.getElementById("cartCount").innerText = cart.length;
 }
@@ -170,9 +150,7 @@ function calculateTotal() {
     }, 0);
 }
 
-// ============================================
 // OPEN CART
-// ============================================
 function openCart() {
     const container = document.getElementById("cartItems");
     container.innerHTML = "";
@@ -207,9 +185,7 @@ function removeItem(i) {
     openCart();
 }
 
-// ============================================
-// VALIDATION SIMPLE (CORRIGÉE)
-// ============================================
+// La VALIDATION SIMPLE 
 function validateName(name) {
     return name.trim().length >= 2;
 }
@@ -218,9 +194,7 @@ function validatePhone(phone) {
     return /^[0-9]{8,15}$/.test(phone.trim());
 }
 
-// ============================================
 // WHATSAPP
-// ============================================
 function sendWhatsApp() {
     const name = document.getElementById("clientName").value;
     const phone = document.getElementById("clientPhone").value;
