@@ -1,15 +1,13 @@
-# 🧥 ANTI MELE - Pressing & Prêt-à-Porter
+ANTIMELE - Pressing & Prêt-à-Porter
 
 Site web moderne pour un pressing et une boutique prêt-à-porter à Lomé, Togo.
 
-## 🚀 Fonctionnalités
+Fonctionnalités
 
-- ✅ Design responsive
-- ✅ Présentation des services (lavage, repassage, entretien)
-- ✅ Catalogue produits par catégorie
-- ✅ Système de panier
-- ✅ Réservation via WhatsApp
-- ✅ Compteurs animés
-- ✅ Effets de révélation au scroll
-
-## 📁 Structure
+Un design responsive
+Une présentation des services (lavage, repassage, entretien)
+Un catalogue produits par catégorie
+Un système de panier
+Une réservation via WhatsApp
+Un compteurs animés
+Un effets de révélation au scroll
